@@ -8,16 +8,14 @@
 </head>
 <body>
 
-<canvas id="my-canvas" width="300" height="150"></canvas>
+<canvas id="my-canvas" width="600" height="150"></canvas>
 
 <script>
     const canvas = document.getElementById("my-canvas");
     const ctx = canvas.getContext("2d");
     ctx.beginPath();
-    ctx.moveTo(0, 0);
-    ctx.lineTo(300, 150);
-    ctx.stroke();
-
+    ctx.font = "40px Arial";
+    ctx.fillText("Hello World", 100, 50);
 </script>
 
 </body>
